@@ -297,11 +297,11 @@ public class Quiz
 </p>
 
 ```java 
-	String qstOne =
-	"\n1 - Java é uma linguagem:\n\n"
-	+ "A - Altamente tipada e orientada a objetos.\n" //RESP
-	+ "B - Não tipada e não orientada a objetos.\n"
-	+ "C - Altamente tipada, orientada a objetos e não possui classes prontas.\n"
+    String qstOne =
+    "\n1 - Java é uma linguagem:\n\n"
+    + "A - Altamente tipada e orientada a objetos.\n" //RESP
+    + "B - Não tipada e não orientada a objetos.\n"
+    + "C - Altamente tipada, orientada a objetos e não possui classes prontas.\n"
     + "D - Interpretada.\n"
     + "E - Interpretada, de tipagem dinâmica e multiparadigma.\n";
 ```
