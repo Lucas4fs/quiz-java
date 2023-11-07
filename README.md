@@ -2,7 +2,7 @@
     <img src="imagens\javaQuizImage.png">
     <br>
     <h1 align="center">
-    📝 Java Quiz Back End 📝
+    📝 JAVA QUIZ BACK END 📝
     </h1>
 </p>
 <br>
@@ -34,11 +34,11 @@ https://github.com/Lucas4fs/quiz-java/tree/main/src/com/example/quiz
 </h3>
 
 <p>
-    Ao invês de manter as perguntas, variáveis que amarzenam a resposta do usuário e a validação da resposta em uma única classe iremos fazer diferente, vamos explorar a linguagem Java usando uma interface(contrato que deve ser seguido) terá um método que quando for chamado irá validar se a resposta fornecida pelo usuário está correta ou não, caso a resposta esteja correta o usuário passa para a próxima pergunta, caso a resposta esteja errada o usuário deve tentar digitar uma nova resposta até acertar a questão, enquando não acertar não passará para a próxima pergunta, a criação desse código será explicado detalhadamente. Vale lembrar que existem diversas formas de criar o projeto, mas nesse caso iremos seguir essa política de codificação.
+    Ao invês de manter as perguntas, variáveis que amarzenam a resposta do usuário e a validação da resposta em uma única classe iremos fazer diferente, vamos explorar a linguagem Java usando uma interface(contrato que deve ser seguido) terá um método que quando for chamado irá validar se a resposta fornecida pelo usuário está correta ou não, caso a resposta esteja correta o usuário passa para a próxima pergunta, caso a resposta esteja errada o usuário deve tentar digitar uma nova resposta até acertar a questão, enquando não acertar não passará para a próxima pergunta, a criação desse código será explicada detalhadamente. Vale lembrar que existem diversas formas de criar o projeto, mas nesse caso iremos seguir essa política de codificação.
 </p>
 
 <h3>
-    :pushpin: Segue Abaixo uma Imagem que Explica de Forma mais Didática como será o Comportamento/Comunicação das Classes Dentro da IDE
+    :pushpin: Segue Abaixo um Diagrama que Explica de Forma mais Didática como será o Comportamento/Comunicação das Classes Dentro da IDE
 </h3>
 
 <img src = "imagens\diagrama.png">
@@ -52,7 +52,7 @@ https://github.com/Lucas4fs/quiz-java/tree/main/src/com/example/quiz
 </li>
 
 <p>
-    Vale lembrar que todas as classes ficaram dentro do mesmo pacote e durante a explicação as partes do código estão divididas para que cada parte possa ser explicada, abaixo o primeiro código se refere ao pacote do projeto(que armazenará as classes), o segundo importa uma classe que está dentro de outro pacote e será usada para escanear valores.
+    Vale lembrar que todas as classes ficaram dentro do mesmo pacote e durante a explicação as partes do código estão divididas para que cada parte possa ser explicada, abaixo o primeiro código se refere ao pacote do projeto(que armazenará as classes), o segundo importa uma classe pronta do Java que está dentro de outro pacote e será usada para escanear valores.
 </p>
 
 ```java
@@ -100,7 +100,7 @@ public class QuizApplication
 ```
 
 <p>
-    Objeto <strong>quiz</strong> chama o método <strong>printQstOne();</strong>, esse método pertence a classe <strong>Quiz</strong> e é responsável por imprimir o objeto <strong>qstOne</strong> que recebe o texto da primeira questão.
+    Objeto <strong>quiz</strong> chama o método <strong>printQstOne()</strong>, esse método pertence a classe <strong>Quiz</strong> e é responsável por imprimir o objeto <strong>qstOne</strong> que recebe o texto da primeira questão.
 </p>
 
 ```java
@@ -115,7 +115,7 @@ public class QuizApplication
         System.out.println("Digite sua resposta:");
 ``` 
 <p>
-    A variável <strong>respQstOneUser</strong> recebe o objeto scanner que chama o método <strong>nextLine()</strong> que pega o próximo valor digitado pelo usuário.
+    A variável <strong>respQstOneUser</strong> recebe o objeto scanner que chama o método <strong>nextLine()</strong> que pega o próximo valor digitado pelo usuário. Nesse momento o usuário digita a resposta da pergunta.
 </p>
 
 ```java
@@ -129,7 +129,7 @@ public class QuizApplication
         boolean respCorreta = false;
 ```
 <p>
-    Aqui se inicia um loop(laço), enquanto a variável <strong>respCorreta</strong> não for true(verdade).
+    Aqui se inicia um loop(laço), enquanto a variável <strong>respCorreta</strong> não for true(verdade) esse loop irá acontecer.
 </p>
 
 ```java
@@ -137,7 +137,7 @@ public class QuizApplication
         {
 ```
 <p>
-    A variável <strong>respCorreta</strong> recebe o objeto <strong>quizService</strong> que chama o método <strong>validarResposta</strong> pertencente a classe <strong>QuizService</strong> passando dois argumentos, <strong>respQstOneUser</strong>(que armazenou a resposta do usuário) e a letra <strong>A</strong> que é a resposta correta, mais pra frente vamos ver como esse método funciona, mas até aqui basta saber que ele valida se a resposta do usuário está igual a resposta correta.
+    A variável <strong>respCorreta</strong> recebe o objeto <strong>quizService</strong> que chama o método <strong>validarResposta</strong> pertencente a classe <strong>QuizService</strong> passando dois argumentos, <strong>respQstOneUser</strong>(que armazenou a resposta do usuário) e a letra <strong>A</strong> que é a resposta correta, mais a frente vamos entender como esse método funciona, mas até aqui basta saber que ele valida se a resposta do usuário está igual a resposta correta.
 </p>
 
 ```java
