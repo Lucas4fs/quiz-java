@@ -18,11 +18,11 @@ https://github.com/Lucas4fs/quiz-java/tree/main/src/com/example/quiz
 </h3>
 
 <p>
-    Criar um quiz usando a linguagem Java<br>
+    Criar um quiz usando a linguagem Java.
 </p>
 
 <h3>
-    :pushpin: Como funciona o quiz?
+    :pushpin: Como Funciona o Quiz
 </h3>
 
 <p>
@@ -30,7 +30,7 @@ https://github.com/Lucas4fs/quiz-java/tree/main/src/com/example/quiz
 </p>
 
 <h3>
-    :pushpin: Regras que foram seguidas durante a criação do código
+    :pushpin: Regras que Foram Seguidas Durante a Criação do Código
 </h3>
 
 <p>
@@ -38,7 +38,7 @@ https://github.com/Lucas4fs/quiz-java/tree/main/src/com/example/quiz
 </p>
 
 <h3>
-    :pushpin: Segue abaixo uma imagem que explica de forma mais didática como será o comportamento/comunicação das classes dentro da IDE
+    :pushpin: Segue Abaixo uma Imagem que Explica de Forma mais Didática como será o Comportamento/Comunicação das Classes Dentro da IDE
 </h3>
 
 <img src = "imagens\diagrama.png">
@@ -68,8 +68,9 @@ Declaramos a classe que QuizApplication como algo público, essa classe sendo p�
 public class QuizApplication
 {
 ```
-
-A palavra-chave <strong>public</strong> indica que o método <strong>main()</strong> é acessível a partir de qualquer classe. A palavra-chave <strong>static</strong> indica que o método <strong>main()</strong> pertence à classe, não a uma instância específica da classe. A palavra-chave <strong>void</strong> indica que o método <strong>main()</strong> não retorna nenhum valor.O parâmetro <strong>args</strong> é um array de strings que contém os argumentos da linha de comando. Se nenhum argumento for especificado na linha de comando, o array args estará vazio, o corpo do método main() é onde o código do programa é executado. 
+<p>
+    A palavra-chave <strong>public</strong> indica que o método <strong>main()</strong> é acessível a partir de qualquer classe. A palavra-chave <strong>static</strong> indica que o método <strong>main()</strong> pertence à classe, não a uma instância específica da classe. A palavra-chave <strong>void</strong> indica que o método <strong>main()</strong> não retorna nenhum valor.O parâmetro <strong>args</strong> é um array de strings que contém os argumentos da linha de comando. Se nenhum argumento for especificado na linha de comando, o array args estará vazio, o corpo do método main() é onde o código do programa é executado. 
+</p>
 
 ```java
     public static void main(String[] args)
@@ -152,7 +153,7 @@ A palavra-chave <strong>public</strong> indica que o método <strong>main()</str
                 System.out.println("Resposta correta!");
 ```
 <p>
-    Se não a frase <strong>"Resposta errada! Tente novamente."</strong> será exibida e a variável <strong>respQstOneUser</strong> receberá um novo valor digitado pelo usuário
+    Se não a frase <strong>"Resposta errada! Tente novamente."</strong> será exibida e a variável <strong>respQstOneUser</strong> receberá um novo valor digitado pelo usuário.
 </p>
 
 ```java
@@ -164,7 +165,7 @@ A palavra-chave <strong>public</strong> indica que o método <strong>main()</str
             }
 ```
 <p>
-    Ficará nesse loop(laço) infinitamente até que o usuário digite uma resposta correta, depois que digitar o código para de rodar no loop e começa a rodar fora do loop dando continuidade
+    Ficará nesse loop(laço) infinitamente até que o usuário digite uma resposta correta, depois que digitar o código para de rodar no loop e começa a rodar fora do loop dando continuidade.
 </p>
 
 ```java
@@ -275,7 +276,7 @@ A palavra-chave <strong>public</strong> indica que o método <strong>main()</str
 </li>
 
 <p>
-    É a classe que contém os objetos que armazenam os textos das perguntas e os métodos que imprimem as perguntas.Vamos começar declarando o pacote
+    É a classe que contém os objetos que armazenam os textos das perguntas e os métodos que imprimem as perguntas.Vamos começar declarando o pacote.
 </p>
 
 ```java
@@ -283,7 +284,7 @@ package com.example.quiz;
 ```
 
 <p>
-   Depois declaramos a classe sendo pública. Essa classe sendo pública qualquer outra classe pode acessá-la
+   Depois declaramos a classe sendo pública. Essa classe sendo pública qualquer outra classe pode acessá-la.
 </p>
 
 ```java
@@ -292,7 +293,7 @@ public class Quiz
 ```
 
 <p>
-   A variável irá receber o texto da primeira questão
+   A variável irá receber o texto da primeira questão.
 </p>
 
 ```java 
@@ -380,7 +381,7 @@ public class Quiz
 </li>
 
 <p>
-    É a interface que contém o serviço para validar se a resposta do usuário é igual a resposta correta.Vamos começar declarando nosso pacote:
+    É a interface que contém o serviço para validar se a resposta do usuário é igual a resposta correta.Vamos começar declarando nosso pacote.
 </p>
 
 ```java
@@ -388,7 +389,7 @@ package com.example.quiz;
 ```
 
 <p>
-    Depois declaramos a interface
+    Depois declaramos a interface.
 </p>
 
 ```java
@@ -397,7 +398,7 @@ public interface QuizService
 ```
 
 <p>
-    A interface é booleana e contém duas varáveis que irá receber dois argumentos, <strong>resposta</strong> que recebe a resposta do usuário e <strong>respostaCorreta</strong> que recebe a resposta correta da pergunta
+    A interface é booleana e contém duas varáveis que irá receber dois argumentos, <strong>resposta</strong> que recebe a resposta do usuário e <strong>respostaCorreta</strong> que recebe a resposta correta da pergunta.
 </p>
 
 ```java
@@ -422,7 +423,7 @@ package com.example.quiz;
 ```
 
 <p>
-    Depois declaramos a classe (pública, pode ser acessada de qualquer outra classe) que implementa a interface, ou seja, a classe irá seguir o contrato da interface
+    Depois declaramos a classe (como pública, permitindo que a classe pode ser acessada de qualquer outra classe) que implementa a interface, ou seja, a classe irá seguir o contrato da interface
 </p>
 
 ```java
@@ -440,7 +441,7 @@ public boolean validarResposta(String resposta, String respostaCorreta)
 ```
 
 <p>
-    Definimos o retorno que é a comparação do primeiro argumento <strong>resposta</strong> com o segundo argumento <strong>respostaCorreta</strong>. O primeiro argumento <strong>resposta</strong> chama um método pronto que é o  <strong>equalsIgnoreCase</strong>(pertencente a classe <strong>String</strong> e que realiza comparação do conteúdo dentro do objeto para ver se ambos são iguais , sem considerar a "Case" que no caso é o fato da letra ser maiúscula ou minúscula), logo depois passamos <strong>respostaCorreta</strong> como argumento do método, ou seja, comparar se o conteúdo que está no objeto <strong>resposta</strong> é igual ao contéudo que está no objeto <strong>respostaCorreta</strong>.Como o método é do tipo boolean(boleano) o retorno será true(verdadeiro) ou false(falso)
+    Definimos o retorno que é a comparação do primeiro argumento <strong>resposta</strong> com o segundo argumento <strong>respostaCorreta</strong>. O primeiro argumento <strong>resposta</strong> chama um método pronto que é o  <strong>equalsIgnoreCase</strong>(pertencente a classe <strong>String</strong> e que realiza comparação do conteúdo dentro do objeto para ver se ambos são iguais , sem considerar a "Case" que no caso é o fato da letra ser maiúscula ou minúscula), logo depois passamos <strong>respostaCorreta</strong> como argumento do método, ou seja, comparar se o conteúdo que está no objeto <strong>resposta</strong> é igual ao contéudo que está no objeto <strong>respostaCorreta</strong>.Como o método é do tipo boolean(boleano) o retorno será true(verdadeiro) ou false(falso).
 </p>
 
 ```java
@@ -452,11 +453,11 @@ return resposta.equalsIgnoreCase(respostaCorreta);
 </p>
 
 <h3>
-    :pushpin:Startando aplicação
+    :pushpin:Startando Aplicação
 </h3>
 
 <p>
-    Chegou o momento de ver a aplicação funcionando, vamos startar a aplicação através da classe principal, ao startar o console já irá nos retornar a primeira pergunta:
+    Chegou o momento de ver a aplicação funcionando, vamos startar a aplicação através da classe principal, ao startar o console já irá nos retornar a primeira pergunta.
 </p>
 
 ```
