@@ -411,11 +411,7 @@ public interface QuizService
 </li>
 
 <p>
-    É a classe que implementa e segue o contrato da interface.
-</p>
-
-<p>
-Vamos começar declarando nosso pacote.
+    É a classe que implementa e segue o contrato da interface. Vamos começar declarando nosso pacote.
 </p>
 
 ```java
@@ -423,7 +419,7 @@ package com.example.quiz;
 ```
 
 <p>
-    Depois declaramos a classe (como pública, permitindo que a classe pode ser acessada de qualquer outra classe) que implementa a interface, ou seja, a classe irá seguir o contrato da interface
+    Depois declaramos a classe (como pública, permitindo que a classe pode ser acessada de qualquer outra classe) que implementa a interface, ou seja, a classe irá seguir o contrato da interface.
 </p>
 
 ```java
